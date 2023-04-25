@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    background: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+/*title*/
+#header{
+    font-size: 4.8rem;
+    color: #282828;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/*inputs container*/
+.inputContainer{
+    max-width: 50rem;
+    margin: 5.6rem auto 3.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+}
+
+/*color input, line thickness, slider*/
+input[type="color" i][list] {
+    -webkit-appearance: auto;
+       -moz-appearance: auto;
+            appearance: auto;
+    width: 8rem;
+    height: 2.4rem;
+    left: 5rem;
+}
+
+#slider{
+    width: 16rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 16rem;
+    top: 0;
+}
+
+#circle{
+    height: .4rem;  
+    width: .4rem;
+    border-radius: 50%;
+    background: black;
+    margin: 0 auto;
+    position: absolute;
+    top: -.8rem;
+    left: -16rem;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.ui-slider .ui-slider-handle {
+    color: #322D2D;
+    width: 3.2rem;
+    height: 3.2rem;
+    top: -.6rem;
+    background: #322D2D;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    border: none;
+}
+
+#thicknessInput{
+    position: relative;
+    width: 4rem;
+}
+
+/* Eraser  */
+.input2{
+   position: absolute;
+   right: 0;
+   bottom: -.3rem;
+}
+
+#erase {
+    width: 3.2rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.eraseMode{
+    border: 2px solid #322D2D;
+    color: white;
+}
+
+/*canvas container*/
+#container{
+    width: 50rem;
+    height: 40rem;
+    border: 2px solid #322D2D;
+    margin: 0 auto;
+}
+
+#paint{
+    background-color: #fff;
+}
+
+/*inputs container*/
+.inputContainer2{
+    width: 50rem;
+    margin: 0 auto;
+}
+
+/*reset button*/
+#reset {
+    border-radius: .4rem;
+    display: block;
+    width: 8.8rem;
+    height: 4.6rem;
+    font-size: 2.4rem;
+    background-color: #322D2D;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    letter-spacing: .1rem;
+    margin: 3.2rem auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+}
